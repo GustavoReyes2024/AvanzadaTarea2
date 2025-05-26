@@ -193,6 +193,17 @@ class EjerciciosClase:
             def maullar(self):
                 print(f"{self.nombre} Esta maullando")
 
+        miPerrox = Perro("Canelito")
+
+        miPerrox.ladrar()
+
+        miPerrox.correr()
+
+        migatox = Gato("Michi")
+        migatox.maullar()
+        migatox.correr()
+        migatox.comer()
+
     def ejercicio12_claseOperaciones(self):
         class OperacionesAritmeticas:
             def __init__(self, a, b):
@@ -210,3 +221,9 @@ class EjerciciosClase:
             
             def division(self):
                 return self.a / self.b
+
+        MainOperaciones = OperacionesAritmeticas(10, 5)
+        print(f"La suma es igual a: {MainOperaciones.suma()}")
+        print(f"La resta es igual a: {MainOperaciones.resta()}")
+        print(f"La multiplicacion es igual a: {MainOperaciones.multiplicacion()}")
+        print(f"La division es igual a: {MainOperaciones.division()}")
